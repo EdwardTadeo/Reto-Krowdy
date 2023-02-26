@@ -1,23 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Pacifico&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    width: 1536px;
 }
-
 body{
     position: relative;
-    width: 1440px;
+    width: 1536px;
     height: 2085px;
     background: #f5f5f5;
-    font-family: 'Nunito';
-font-style: normal;
+    font-family: 'Nunito', sans-serif;
 }
 /*Primera parte*/
 .page-encabezado{
-    position: absolute;
+    position: relative;
     height: 487px;
-    left: -0.94%;
+    width: 1536px;
+    left: 0px;
     right: 0%;
     top: 0px;
     background: url(imagenes/fondo-encabezado.svg), #000000;
@@ -41,15 +44,433 @@ font-style: normal;
     position: relative;
     height: 42px;
     width: 149px;
-    height: 42px;
-    color: white;
-    text-align: center;
-    font-weight: 800;
-    font-size: 14px;
-    
-    line-height: 22px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
     background: #5BC6C6;
     border: 2px solid #5BC6C6;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
     border-radius: 12px;
+}
+.botones-encabezado .btn-1 p{
+    position: relative;
+    width: 129px;
+    height: 22px;
+    right: 13px;
+    top: 8px;
+    left: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #FFFFFF;
+}
+.btn-2{
+    position: relative;
+    width: 66px;
+    height: 42px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+}
+
+.botones-encabezado .btn-2 p{
+    position: relative;
+    width: 63px;
+    height: 18px;
+    right: 0px;
+    top: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+.btn-3{
+    width: 146px;
+    height: 42px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    box-sizing: border-box;
+    position: relative;
+    background: #FF4742;
+    border: 2px solid #FF4742;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;    
+}
+.botones-encabezado .btn-3 p{
+    position: relative;
+    width: 142px;
+    height: 22px;
+    left: calc(50% - 142px/2 - 0.44px);
+    top: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.remote{
+    position: relative;
+    padding: 0px 0px 0px 620px;
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43.2px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.rectangle{
+    position: absolute;
+    left: 49.3%;
+    right: 32%;
+    top: 8%;
+    bottom: 83%;
+    width: 3px;
+    background: #FFFFFF;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.ok{
+    position: absolute;
+    padding: 0px 0px 0px 780px;
+    top: 65px;
+    font-weight: 800;
+    font-size: 27.2px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.R{
+    box-sizing: border-box;
+    position: relative;
+    left: 53.5%;
+    right: 49%;
+    top: 0px;
+    bottom: 90%;
+    border-radius: 50%;
+    color: #f5f5f5;
+}
+.find{
+    position: relative;
+    width: 391.49px;
+    height: 44.16px;
+    left: 550px;
+    top: 5px;
+    color: white;
+    font-size: 48px;
+}
+.page-titulo2 span{
+    font-family: 'Nunito';
+    font-weight:800;
+}
+.work{
+    position: relative;
+    width: 459.7px;
+    height: 41.54px;
+    left: 511px;
+    top: 1px;
+    color: white;
+    font-size: 48px;
+}
+.page-titulo3 span{
+    font-family: 'Nunito';
+    font-weight:800;
+}
+.buscador{
+    position: relative;
+    width: 435px;
+    height: 53px;
+    left: calc(50% - 545px/2 + 9.5px);
+    top: 18px;
+    background: url(imagenes/buscador.svg), #FFFFFF;
+    box-shadow: 0px 0px 0px 1px #DDDDDD, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+}
+.bloque1{
+    position: relative;
+    width: 1114px;
+    height: 82px;
+    left: 168px;
+    top: 65px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 0px 1px #DDDDDD;
+    border-radius: 12px;
+    z-index: 2;
+}
+.border{
+    position: relative;
+    height: 150px;
+    width: 1536px;
+    z-index: 1;
+    left: 0px;
+    right: 0%;
+    top: -160px;
+    background: url(imagenes/fondo.png);
+}
+.bloque1-text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-weight: 800;
+    position: relative;
+    width: 651px;
+    height: 22px;
+    left: calc(50% - 651px/2 - 120.5px);
+    top: 29px;
+    color: #0F1115;
+}
+.bloque1-post{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    width: 159px;
+    height: 42px;
+    left: calc(50% - 153.72px/2 + 300px);
+    top: calc(50% - 42px/2 - 23px);
+    background: #FF4742;
+    border: 2px solid #FF4742;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    color: #FFFBFB;
+    align-items: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+}
+.bloque1-hide{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    width: 88.17px;
+    height: 42px;
+    left: calc(50% - 88.17px/2 + 447.09px);
+    top: calc(50% - 42px/2 - 64px);
+    background: #FFFBFB;
+    border: 2px solid #FF4742;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    color: #FF4742;
+    align-items: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+}
+.amazon img{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: calc(50% - 100px/2 - 415.38px);
+    top: 80px;
+    mix-blend-mode: luminosity;
+    z-index: 3;
+}
+.trusted{
+    position: relative;
+    width: 84px;
+    height: 14px;
+    left: calc(50% - 180px/2 - 466.38px);
+    top: 96px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+    color: rgba(15, 17, 21, 0.6);
+    mix-blend-mode: luminosity;
+}
+.github img{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: calc(50% - 100px/2 - 380px);
+    top: 74px;
+    mix-blend-mode: luminosity;
+    z-index: 3;
+}
+.stripe img{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: calc(50% - 100px/2 - 360px);
+    top: 74px;
+    mix-blend-mode: luminosity;
+    z-index: 3;
+}
+.shopify img{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: calc(50% - 105.5px/2 - 349.75px);
+    top: 74px;
+    mix-blend-mode: luminosity;
+    z-index: 3;
+}
+.upwork img{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: calc(50% - 100px/2 - 325px);
+    top: 75px;
+    mix-blend-mode: luminosity;
+    z-index: 3;
+}
+.indeed img{
+    position: relative;
+    width: 115px;
+    height: 30px;
+    left: calc(50% - 100px/2 - 300px);
+    top: 74px;
+    mix-blend-mode: luminosity;
+    z-index: 3;
+}
+.angel img{
+    position: relative;
+    width: 137px;
+    height: 30px;
+    left: calc(50% - 100px/2 - 255px);
+    top: 74px;
+    mix-blend-mode: luminosity;
+    z-index: 3;
+}
+
+.bloque-search{
+    position: relative;
+    width: 1216px;
+    height: 120px;
+    left: 162px;
+    top: 100px;
+    z-index: 3;
+}
+.logo-rok img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 1px;
+    top: 14px;
+}
+.search{
+    position: relative;
+    width: 162.17px;
+    height: 40px;
+    left: 60px;
+    top: -30px;
+
+}
+
+.select-search{
+    padding: 10px 10px 10px 10px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 50px;
+    width: 175px;
+    font-weight: 800;
+    box-sizing: border-box;
+
+}
+.select-search option{
+    font-weight: 800;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+}
+.location{
+    position: relative;
+    width: 150px;
+    height: 44px;
+    left: 250px;
+    top: -72px;
+    background: url(imagenes/location.svg);
+}
+.salary{
+    position: relative;
+    width: 150px;
+    height: 44px;
+    left: 410px;
+    top: -116px;
+    background: url(imagenes/salary.svg);
+}
+.benefits{
+    position: relative;
+    width: 150px;
+    height: 44px;
+    left: 575px;
+    top: -159px;
+    background: url(imagenes/benefits.svg);
+}
+.sort-by{
+    position: relative;
+    width: 150px;
+    height: 44px;
+    left: 975px;
+    top: -204px;
+    background: url(imagenes/sortby.svg);
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 7px 458.891px 7px 7px;
+    gap: 11.14px;
+    isolation: isolate;
+    position: relative;
+    width: 1208px;
+    height: 54px;
+    left: -6px;
+    top: -202px;
+}
+.sub{
+    box-sizing: border-box;
+    width: 114px;
+    height: 43px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 800;
+    background: rgba(255, 255, 255, 0.5);
+    mix-blend-mode: luminosity;
+    border: 2px dashed rgba(221, 221, 221, 0.5);
+    border-radius: 32px;
+    flex: none;
+    flex-grow: 0;
+    order: 0;
+    color: rgba(15, 17, 21, 0.5);
+}
+.lista-general{
+    position: relative;
+    width: 1154px;
+    height: 1470px;
+    left: 144px;
+    top: -50px;
+    border-radius: 5px;
+}
+.lista-1,.lista-2,.lista-3,.lista-4,
+.lista-5,.lista-6,.lista-7,.lista-8,
+.lista-9,.lista-10,.lista-11,.lista-12,.lista-13{
+    position: relative;
+    width: 1114px;
+    height: 88px;
+    left: 20px;
+    top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
