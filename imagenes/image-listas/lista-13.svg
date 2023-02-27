@@ -1,0 +1,22 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_69_306)">
+<rect x="3" y="2" width="60" height="60" rx="30" fill="white"/>
+<rect x="3" y="2" width="60" height="60" rx="30" fill="url(#pattern0)"/>
+<rect x="4" y="3" width="58" height="58" rx="29" stroke="#DDDDDD" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_d_69_306" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="1" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_69_306"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_69_306" result="shape"/>
+</filter>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_69_306" transform="matrix(0.01 0 0 0.01 0 0.17)"/>
+</pattern>
+<image id="image0_69_306" width="100" height="66" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABCBAMAAABTOW5MAAAAIVBMVEVHcEwTPVQTPVQTPVQTPVQTPVQTPVQTPVQTPVQTPVQTPVQnx0muAAAACnRSTlMAomyLSCbV7xW9KHwcSAAAAfhJREFUeNrtlr9P20AUxx8XO0o21I1MnRhuYkBV5SkIIyBToI1UMVFRhdRrBUGezEBItywsbCRgy9+/srp7zwjJZwUvdPF3yuXuc/d+J0SNGn2MvofDukgPOw3yIUhn9INXndGI5vOEqJPY5bwSUdmUE9rNctLTBe1dToho/3L6s1/1SizmDbAkjcVf4IboGADSfoUvPZzL6oY0HiKDKFg9VSADPJuFD+yQxhjIJhQAmALYdCNtvqwFDEkD+HOUKCA/uNsDVm5EITP+3xtSA/nQfM4+E9GhucWFdGKYfW3s08CCiAKxNS5ZJqlk/yNzWPOLkQRR48qNWP89oG/OrGwkMjaojaUbsf53kRbWkULOBzZK/guikCV0Zi/UmNgvJCGqlBlBfON/YHJusv/2ZKsKoR4WUjaMeNZIa1gVMsCL4hQw4hf5uHcgHPYZVm32mBGKZCNwIOdicsqhKhDNwfXKhRlIDH0gZlqQGfDVrkrIALgIj4joEbBFUyAekO6GXxzl3zU9sWQ2Td4gtqKdHeNHgPVhVpR5gXixBa7LTXYir7Qg9VcgdGuY/JujL0+3xr/Yf47q9njzdef3p6EaX1RNJ1XupXVqF6X7fsnEqKNHKYP3y5NE1tCG6bF6OivPq/W/AFc1Cce4WqeWnUf1AhaGzd+mRv9d/wC0b/GQs3eP4AAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

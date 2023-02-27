@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RemoteOk</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="page-encabezado">
@@ -46,18 +49,65 @@
         </div>
         <div class="bloque-search">
             <a href="#" class="logo-rok"><img src="imagenes/logo-search.svg" alt=""></a>
-            <div class="search">
-                <select name="searchlist" id="searchlist" class="select-search" size="">
-                    <option value="" disabled selected>🔍 Search</option>
-                    <option value="">🤓 Engineer</option>
-                    <option value="">💼 Executive</option>
-                    <option value="">👴 Senior</option>
-                    <option value="">🤓 Developer</option>
-                    <option value="">💰 Finance</option>
-                    <option value="">🔗 Sys Admin</option>
-                    <option value="">☕ JavaScript</option>
-                    <option value="">🍏 Backend</option>
-                </select>
+            <div class="contenido-search">
+                <button class="search" type="button" onclick="desplegar()" id="target">🔍 Search</button><i class="fa fa-angle-down" id="igual"></i> 
+                <div class="select-search" id="select" style="display: none;">
+                    <a href="#">
+                        <div class="opciones">
+                            <p>🤓 Engineer</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>💼 Executive</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>👴 Senior</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>🤓 Developer</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>💰 Finance</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>🔗 Sys Admin</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>☕ JavaScript</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>🍏 Backend</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>🐀 Golang</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>☁ Cloud</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="opciones">
+                            <p>🚑 Medical</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="location">
 
@@ -85,43 +135,334 @@
         </div>
        <div class="lista-general">
             <div class="lista-1" style="background: #343477;">
-
+                <img src="imagenes/image-listas/lista-1.svg" alt="">
+                <h4>Nomad Health by SafetyWing</h4>
+                <h5>Global health insurance for remote workers and nomads</h5>
+                <button>Sign me up</button>
             </div>
             <div class="lista-2" style="background: #FFF38F;">
-
+                <img src="imagenes/image-listas/lista-2.svg" alt="">
+                <h4 class="title-h4">Marketing Designer</h4>
+                <div class="verified">
+                    VERIFIED
+                </div>
+                <h4 class="title2-h4">Whimsical</h4>
+                <div class="places">
+                    <a href="#" class="place"><i class="em em-flag-eu" aria-role="presentation" aria-label="European Union Flag"></i> Europe</a>
+                    <a href="#" class="place"><i class="em em-gb" aria-role="presentation" aria-label="United Kingdom Flag"></i> United Kingdom</a>
+                    <a href="#" class="place"><i class="em em-flag-um" aria-role="presentation" aria-label="U.S. Outlying Islands Flag"></i> United States</a>
+                    <a href="#" class="place"><i class="em em-flag-ca" aria-role="presentation" aria-label="Canada Flag"></i> Canada</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">Design</a>
+                    <a href="#" class="cat-lis">Marketing</a>
+                </div>
+                <div class="days">
+                    <p>📎 6d</p>
+                </div>
+                <div class="boton-apply">
+                    <button type="button" onclick="mostrar()">Apply</button>
+                </div>
+                <div class="descripcion" id="mostrado" style="display: none;">
+                    <h1>Whimsical is hiring a</h1>
+                    <h1>Remote Marketing Designer</h1>
+                    <h2>Description</h2>
+                    <p><span>Whimsical</span> is a B2B SaaS company on a mission to make collaboration more enjoyable and productive by building an all-in-one collaboration hub. We are are passionate about user experience, interconnectedness of tools and building software that feels like magic.</p>
+                    <p>We’re looking for an experienced Marketing Designer to help us evolve and scale the Whimsical brand across various channels and mediums.</p>
+                    <br>
+                    <h2>About The Role</h2>
+                    <p><span>Whimsical</span> is a product-led company that truly values design and craftsmanship. We strive to build world-class software that is fast, elegant, and insanely polished. Whimsical is extremely visual and design plays a central role in everything we do. In short, this is an incredible place to be a designer.</p>
+                    <p>This is an exciting opportunity to help grow and elevate Whimsical’s marketing. The right candidate is a versatile designer who is comfortable getting in the weeds and working directly in the tools to build effective marketing experiences (mainly digital and web.)</p>
+                    <p>You will report to our Head of Product Design,<span> Mindy Wagner.</span> You will also work closely with the VP of Marketing,<span> Melissa Ho.</span></p>
+                    <h2>Your responsibilities include:</h2>
+                    <ul>
+                        <li>Develop and design marketing concepts that bring our brand to life, connect with potential customers, and drive acquisition across various touch points (primarily digital) such as our website, social graphics, and marketing campaigns.</li>
+                        <li>Create brand assets including graphics, photography, illustration, icons, infographics, video/animations, etc. Deliver unexpected and inspiring designs on both large and small tasks.</li>
+                        <li>Improve the user experience and effectiveness of our website, campaigns, and activations.</li>
+                        <li>Translate data-driven insights into improved brand experiences.</li>
+                    </ul>
+                    <br>
+                    <h2>About you</h2>
+                    <ul>
+                        <li>You have 5+ years of proven marketing design experience and a portfolio showcasing high-quality marketing and web design deliverables.</li>
+                        <li>You are a creative visual storyteller with excellent typography, color, layout, and composition skills.</li>
+                        <li>You can develop a beautiful, thoughtful, and engaging website UI. You are comfortable with HTML/CSS and can build and edit websites using Webflow. Bonus points if you can also create website animations.</li>
+                        <li>You have a working knowledge of the various tools needed to realize your vision.</li>
+                        <li>You live at the intersection of marketing and user experience and understand how to take users on a complete journey from discovery to adoption and success.</li>
+                        <li>You have knowledge and familiarity with a data-informed approach to design – you’ve used tools and resources needed to measure the success of design decisions (A/B testing tools, Google Analytics, etc.)</li>
+                        <li>You are excited to work at every stage of a project, from initial concept through final production, with minimal direct oversight.</li>
+                        <li>You feel that our philosophy resonates with you and you can see it guiding your decisions while at Whimsical.</li>
+                        <li>You are able to communicate in English clearly both verbally and in writing.</li>
+                        <li>You're a self-starter who can keep track of multiple projects with minimal oversight.</li>
+                    </ul>
+                    <br>
+                    <h2>Requirements</h2>
+                    <ul>
+                        <li>to legal and compliance reasons we’re looking for someone in either </li> 
+                        <li><i class="em em-flag-um" aria-role="presentation" aria-label="U.S. Outlying Islands Flag"></i>&nbsp;<i class="em em-flag-ca" aria-role="presentation" aria-label="Canada Flag"></i> North America</li>
+                        <li><i class="em em-flag-eu" aria-role="presentation" aria-label="European Union Flag"></i> European Union</li>
+                        <li><i class="em em-gb" aria-role="presentation" aria-label="United Kingdom Flag"></i> United Kingdom</li>
+                        <li>resume or manually entered experience (you can choose your preference).</li> 
+                        <li>link to your portfolio.</li> 
+                        <li>Thoughtful, thorough responses to all the application questions.</li>
+                    </ul>
+                    <br>
+                    <h2>Benefits</h2>
+                    <ul>
+                        <li>100% Remote: We’re spread from California to Latvia and we’ve got you covered if you prefer to work from a coworking space</li>
+                        <li>Salary: Annual salary starting at $118,164-$147,705</li>
+                        <li>Vacation: 6 weeks of paid time off each year</li>
+                        <li>Parental Leave: 16 weeks paid by company</li>
+                        <li>Equipment: We provide all the tech you need to work successfully</li>
+                        <li>Summits: We try to bring everyone together at least twice a year</li>
+                        <li>Pension*: 401k with 6% company matching</li>
+                        <li>Health Insurance*: Paid by company for you and dependents</li>
+                    </ul>
+                    <p style="width: 900px !important;">* Availability may depend on your location and our current administrative capabilities there.</p>
+                    <br>
+                    <h2>About Whimsical</h2>
+                    <p style="width: 1050px !important;">Whimsical was founded in 2017 by Kaspars Dancis and Steve Schoeffel to help teams be more effective in the distributed and fully digital work environment.</p>
+                    <p style="width: 1050px !important;">Whimsical's product is expressive, fast, and delightful. We believe that software should spark joy, not dread.</p>
+                    <p style="width: 1050px !important;">We are a remote-first company and big proponents of remote work because it democratizes the opportunities for people everywhere.</p>
+                    <p style="width: 1050px !important;">Our operating philosophy is based on set of core principles, such as:</p>
+                    <ul>
+                        <li>Sustainability: We don't believe in growth at all costs. Growth is a fundamental part of a healthy existence but we want it to be in balance with sustainability and bounded by ethical behavior. We strive to work calm, 40-hour work weeks. Whimsical is also committed to doing our part towards a sustainable future for the planet.</li>
+                        <li>Craftsmanship: We care deeply about our work. We are specialists, eager learners, and persistent in our pursuit of quality work. We're patient and committed because building great things takes time</li>
+                        <li>Long-term focus: We're building Whimsical for the long-haul, not a quick exit. We avoid shortcuts and consider every key decision from a 10+ year perspective.</li>
+                        <li>Partnership Mindset: We’ve built the company around the idea that everybody who joins us should feel like they are partners in the business. Time is precious and we want Whimsical to be the place where people invest their time rather than sell it. Our equity offers are 100% transparent and above market average. We also pay everyone at the same level the same salary, no matter where they live.</li>
+                    </ul>
+                    <p style="width: 1050px !important;">Please mention the word SWIFTNESS when applying to show you read the job post completely (#RMjA5LjQ1LjU4LjE2MQ==). This is a feature to avoid fake spam applicants. Companies can search these words to find applicants that read this and instantly see they're human.</p>
+                    <br>
+                    <h2>Salary and compensation</h2>
+                    <p>$110,000 — $150,000/year</p>
+                    <h2>Benefits</h2>
+                    <p>💰 401(k)</p>
+                    <p>🌎 Distributed team</p>
+                    <p>⏰ Async</p>
+                    <p>🤓 Vision insurance</p>
+                    <p>🦷 Dental insurance</p>
+                    <p>🚑 Medical insurance</p>
+                    <p>🏖 Paid time off</p>
+                    <p>💰 401k matching</p>
+                    <p>🏔 Company retreats</p>
+                    <p>🎅 We hire old (and young)</p>
+                    <div class="card">
+                        <img src="imagenes/image-listas/lista-2.svg" alt="">
+                        <h2>Whimsical</h2>
+                        <h3>whimsical.com</h3>
+                        <button>Apply for this job</button>
+                        <p>👀 3,951 views</p>
+                        <p>✅ 239 applied (6%)</p>
+                        <h3 style="top:11%; left: 30%; text-decoration-line: none;">Share this job:</h3>
+                        <a href="">https://remoteok.co...</a>
+                        <h5>Get a <span>rok.co</span>  short link</h5>
+                        <hr>
+                        <p>Also hiring:</p>
+                        <h3 style="top:10%; left: 23%; width: 200px; font-weight: 800;">People Operations Generalist</h3>
+                    </div>
+                    <div class="final-card">
+                        <h1>How do you apply?</h1>
+                         <button>Apply for this job</button>
+                         <p>👉 Please reference you found the job on Remote OK, this helps us get more companies to post here, thanks!</p>
+                         <p style="left: 2%; font-weight: 400;">When applying for jobs, you should NEVER have to pay to apply. You should also NEVER have to pay to buy equipment which they then pay you back for later. Also never pay for trainings you have to do. Those are scams! NEVER PAY FOR ANYTHING! Posts that link to pages with "how to work online" are also scams. Don't use them or pay for them. Also always verify you're actually talking to the company in the job post and not an imposter. A good idea is to check the domain name for the site/email and see if it's the actual company's main domain name. Scams in remote work are rampant, be careful! <span>Read more to avoid scams.</span>  When clicking on the button to apply above, you will leave Remote OK and go to the job application page for that company outside this site. Remote OK accepts no liability or responsibility as a consequence of any reliance upon information on there (external sites) or here.</p>
+                    </div>
+                </div>
             </div>
             <div class="lista-3" style="background: #FFD500;">
-
+                <img src="imagenes/image-listas/lista-3.svg" alt="">
+                <h4 class="title-h4">PHP Developer</h4>
+                <h4 class="title2-h4">Transax</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $50k - $120k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">Engineer</a>
+                    <a href="#" class="cat-lis">Developer</a>
+                    <a href="#" class="cat-lis">Full Stack</a>
+                </div>
+                <div class="days">
+                    <p>📎 22d</p>
+                </div>
             </div>
             <div class="lista-4" style="background: #FFF38F;">
-
+                <img src="imagenes/image-listas/lista-4.svg" alt="">
+                <h4 class="title-h4">Site Reliability Engineer 🎈</h4>
+                <h4 class="title2-h4">Sticker Mule</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">Engineer</a>
+                    <a href="#" class="cat-lis">JavaScript</a>
+                    <a href="#" class="cat-lis">Golang</a>
+                </div>
+                <div class="days">
+                    <p>📎 4h</p>
+                </div>
+                <img src="imagenes/image-listas/new-gif.gif" alt="" class="new">
+                
             </div>
             <div class="lista-5" style="background: #FFF38F;">
-
+                <img src="imagenes/image-listas/lista-5.svg" alt="">
+                <h4 class="title-h4">Software engineer 🎈</h4>
+                <h4 class="title2-h4">Sticker Mule</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">Developer</a>
+                    <a href="#" class="cat-lis">JavaScript</a>
+                    <a href="#" class="cat-lis">React</a>
+                </div>
+                <div class="days">
+                    <p>📎 4h</p>
+                </div>
+                <img src="imagenes/image-listas/new-gif.gif" alt="" class="new">
+               
             </div>
             <div class="lista-6" style="background: #FF61E2;">
-
+                <img src="imagenes/image-listas/lista-6.svg" alt="">
+                <h4 class="title-h4" style="color: white !important;">Senior Front End Developer</h4>
+                <h4 class="title2-h4" style="color: white !important;">Migaku</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis" style="color: #FF61E2 !important; border: 3px solid white !important; background-color: white;">Engineer</a>
+                    <a href="#" class="cat-lis" style="color: #FF61E2 !important; border: 3px solid white !important; background-color: white;">Senior</a>
+                    <a href="#" class="cat-lis" style="color: #FF61E2 !important; border: 3px solid white !important; background-color: white;">Developer</a>
+                </div>
+                <div class="days">
+                    <p>📎 24d</p>
+                </div>
             </div>
             <div class="lista-7" style="background: #FFF38F;">
-
+                <img src="imagenes/image-listas/lista-7.svg" alt="">
+                <h4 class="title-h4">Software Engineer Backend 🎈</h4>
+                <h4 class="title2-h4">Sticker Mule</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">Developer</a>
+                    <a href="#" class="cat-lis">JavaScript</a>
+                    <a href="#" class="cat-lis">React</a>
+                </div>
+                <div class="days">
+                    <p>📎 1d</p>
+                </div>
             </div>
             <div class="lista-8" style="background: #003399;">
-
+                <img src="imagenes/image-listas/lista-8.svg" alt="">
+                <h4 class="title-h4" style="color: white !important;">Freelance Writer 🎈</h4>
+                <div class="verified">
+                    VERIFIED
+                </div>
+                <h4 class="title2-h4" style="color: white !important;">IAPWE</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis" style="color: #003399 !important; border: 3px solid white !important; background-color: white;">Content Writing</a>
+                    <a href="#" class="cat-lis" style="color: #003399 !important; border: 3px solid white !important; background-color: white;">Non Tech</a>
+                    <a href="#" class="cat-lis" style="color: #003399 !important; border: 3px solid white !important; background-color: white;">Writing</a>
+                </div>
+                <div class="days">
+                    <p>📎 27d</p>
+                </div>
             </div>
             <div class="lista-9" style="background: #FFFFFF;">
-
+                <img src="imagenes/image-listas/lista-9.svg" alt="">
+                <h4 class="title-h4">Platform Engineer</h4>
+                <h4 class="title2-h4">Wander.com</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">Engineer</a>
+                    <a href="#" class="cat-lis">Sys Admin</a>
+                    <a href="#" class="cat-lis">JavaScript</a>
+                </div>
+                <div class="days">
+                    <p>📎 5d</p>
+                </div>
             </div>
             <div class="lista-10" style="background: #FFFFFF;">
-
+                <img src="imagenes/image-listas/lista-10.svg" alt="">
+                <h4 class="title-h4">Software Developer 🎈</h4>
+                <div class="verified">
+                    VERIFIED
+                </div>
+                <h4 class="title2-h4">White Sand</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">Senior</a>
+                    <a href="#" class="cat-lis">Developer</a>
+                    <a href="#" class="cat-lis">JavaScript</a>
+                </div>
+                <div class="days">
+                    <p>📎 6d</p>
+                </div>
             </div>
             <div class="lista-11" style="background: #FFF38F;">
-
+                <img src="imagenes/image-listas/lista-11.svg" alt="">
+                <h4 class="title-h4">Freelance Copywriter</h4>
+                <h4 class="title2-h4">Doughnut</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">Non Tech</a>
+                    <a href="#" class="cat-lis">Content Writing</a>
+                </div>
+                <div class="days">
+                    <p>📎 7d</p>
+                </div>
             </div>
             <div class="lista-12" style="background: #FFF38F;">
-
+                <img src="imagenes/image-listas/lista-12.svg" alt="">
+                <h4 class="title-h4">Freelance Graphic Designer</h4>
+                <h4 class="title2-h4">Doughnut</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">Design</a>
+                </div>
+                <div class="days">
+                    <p>📎 8h</p>
+                </div>
             </div>
             <div class="lista-13" style="background: #FFFFFF;">
-
+                <img src="imagenes/image-listas/lista-13.svg" alt="">
+                <h4 class="title-h4">Platform Technical Support Specialist</h4>
+                <h4 class="title2-h4">Lyra Health</h4>
+                <div class="places">
+                    <a href="#" class="place">🌏 Worldwide</a>
+                    <a href="#" class="place">💰 $140k - $150k</a>
+                </div>
+                <div class="categoria-group">
+                    <a href="#" class="cat-lis">System</a>
+                    <a href="#" class="cat-lis">Teaching</a>
+                    <a href="#" class="cat-lis">Cfo</a>
+                </div>
+                <div class="days">
+                    <p>📎 2h</p>
+                </div>
+                <img src="imagenes/image-listas/new-gif.gif" alt="" class="new">
+                
             </div>
        </div>
     </div>
